@@ -1,0 +1,46 @@
+{
+  "name": "@omer-x/package-metadata",
+  "version": "0.1.0",
+  "description": "Extracts essential metadata from package.json",
+  "keywords": [
+    "package",
+    "package.json",
+    "metadata"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omermecitoglu/package-metadata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omermecitoglu/package-metadata/issues"
+  },
+  "homepage": "https://github.com/omermecitoglu/package-metadata#readme",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Omer Mecitoglu",
+    "email": "omer.mecitoglu@gmail.com",
+    "url": "https://omermecitoglu.github.io"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@omer-x/eslint-config": "^1.0.6",
+    "@types/node": "^20.11.30",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.3"
+  }
+}
