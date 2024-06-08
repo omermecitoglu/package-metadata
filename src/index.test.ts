@@ -2,7 +2,7 @@ import path from "node:path";
 import { describe, expect, it } from "@jest/globals";
 import getPackageMetadata from ".";
 
-describe("CRUD operations for User", () => {
+describe("Package Metadata", () => {
   it("should correctly generate package metadata", () => {
     const packageJSON = path.resolve(process.cwd(), "package.json");
     const version = require(packageJSON).version;
