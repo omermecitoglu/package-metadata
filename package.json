@@ -1,6 +1,6 @@
 {
   "name": "@omer-x/package-metadata",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Extracts essential metadata from package.json",
   "keywords": [
     "package",
@@ -40,6 +40,7 @@
     "@types/node": "^22.4.0",
     "eslint": "^8.57.0",
     "jest": "^29.7.0",
+    "semantic-release": "^24.1.2",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "tsup": "^8.2.4",
