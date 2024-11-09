@@ -27,7 +27,7 @@ export default function getPackageMetadata(): PackageMetadata {
   const filePath = path.resolve(process.cwd(), "package.json");
   const content = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(content) as { name?: string, version?: string };
-  const packageName = data.name ?? "Unnamed App";
+  const packageName = data.name ?? "unnamed-app";
   const moduleName = getModuleName(packageName) ?? "unknown-package";
   return {
     scope: getScopeName(packageName),
