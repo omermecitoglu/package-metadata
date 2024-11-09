@@ -26,14 +26,14 @@ function getModuleName(packageName: string) {
 export default function getPackageMetadata(): PackageMetadata {
   const filePath = path.resolve(process.cwd(), "package.json");
   const content = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(content);
-  const packageName = data.name as string;
+  const data = JSON.parse(content) as { name?: string, version?: string };
+  const packageName = data.name ?? "Unnamed App";
   const moduleName = getModuleName(packageName) ?? "unknown-package";
   return {
     scope: getScopeName(packageName),
     packageName,
     moduleName,
     serviceName: capitalize(moduleName.replace(/-/g, " ")),
-    version: data.version,
+    version: data.version ?? "1.0.0",
   };
 }
